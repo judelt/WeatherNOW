@@ -54,19 +54,19 @@ function App() {
       <header className="header">
       <h1>weather<span>NOW</span></h1>  
       </header>
-      <div className="search-box">
-        <input
-            type="text"
-            className="search-bar"
-            placeholder="Search for city..."
-            onChange={e => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search} 
-        />
-      </div>
       
       { weather.main ? (
           <>
+        <div className="search-box">
+          <input
+              type="text"
+              className="search-bar"
+              placeholder="Search for city..."
+              onChange={e => setQuery(e.target.value)}
+              value={query}
+              onKeyPress={search} 
+          />
+        </div>
         <div className="location-box">
           <div className="location">{ weather.name }, {weather.sys.country}</div>
           <div className="date">{dateBuilder(new Date())}</div>
@@ -87,7 +87,23 @@ function App() {
               
         </div>
       </>
-      ) : ("")}
+        ) : (
+        <>
+        <section className="question">
+         <h1>What's the weather like in...?</h1>     
+        </section> 
+        <div className="search-box">
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search for city..."
+            onChange={e => setQuery(e.target.value)}
+            value={query}
+            onKeyPress={search} 
+          />
+        </div>   
+        </>
+      )}
         
      </main>
     </div>

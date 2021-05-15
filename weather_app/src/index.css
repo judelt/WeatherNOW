@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@500&family=Rubik:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Roboto:wght@500&family=Rubik:wght@400;700&display=swap');
 
 :root {
   --extreme-warm-temp: #ff531f;
@@ -8,7 +7,7 @@
   --cold-temp: #118ab2;
   --very-cold-temp: #274c77;
   --extreme-cold-temp: #cae9ff;
-  --intital: #6c757d;
+  --intital: #2a9d8f;
 }
 
 * {
@@ -24,8 +23,21 @@
   transition: .4s ease-out;
 }
 
+.question {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 15% 5% 0% 5%;
+  padding: 0px 25px;
+
+  font-size: 2rem;
+  font-weight: 900;
+
+  text-align: center;
+}
+
 .header {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1rem;
 }
 
