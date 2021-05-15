@@ -19,6 +19,8 @@
 }
 
 .app {
+  min-width: 480px;
+  max-width: 768px;
   background-color: var(--intital);
   transition: .4s ease-out;
 }
