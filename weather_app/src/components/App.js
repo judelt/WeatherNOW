@@ -51,14 +51,14 @@ function App() {
   return (
     <div className={weatherClass}>
      <main>
-      <header>
-        <h1>Title</h1>  
+      <header className="header">
+      <h1>weather<span>NOW</span></h1>  
       </header>
       <div className="search-box">
         <input
             type="text"
             className="search-bar"
-            placeholder="Search..."
+            placeholder="Search for city..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search} 

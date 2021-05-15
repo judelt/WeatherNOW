@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@500&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@500&family=Rubik:wght@400;700&display=swap');
+
 
 :root {
   --extreme-warm-temp: #ff531f;
@@ -23,6 +24,19 @@
   transition: .4s ease-out;
 }
 
+.header {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header span {
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
+}
 
 .extreme-warm {
   background-color: var(--extreme-warm-temp);
@@ -52,12 +66,12 @@
 main {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),  rgba(255, 255, 255, 0));
-  padding: 5% 5% 0 5%;
 }
 
 .search-box {
   width: 100%;
-  margin: 8% 0 12%;
+  padding: 5% 5% 0 5%;
+  margin: 3% 0 12%;
 }
 
 .search-box .search-bar {
