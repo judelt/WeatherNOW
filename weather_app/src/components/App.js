@@ -1,7 +1,7 @@
 import axios from "axios";
 import classnames from "classnames";
 import { useState } from 'react';
-import { dateBuilder, localTime, isNight } from "../helpers/helpers";
+import { dateBuilder, localTime } from "../helpers/helpers";
 
 const api = {
   key: "b81405fabcf783e25e2cc3bedd1e9d3e",
@@ -12,7 +12,6 @@ const api = {
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
-  const [weatherType, setWeatherType] = useState("");
   const [temp, setTemp] = useState();
   const [timezone, setTimezone] = useState();
   const [icon, setIcon] = useState("");
@@ -23,14 +22,9 @@ function App() {
       axios.get(`${api.base}/weather?q=${query}&appid=${api.key}`)
         .then((res) => {
           setWeather(res.data);
-          console.log('weather', res.data);
-          setWeatherType(res.data.weather[0].description);
-          // console.log('w type', res.data.weather[0].description)
           setTemp(Math.round(res.data.main.temp - 273.15));
           setTimezone(res.data.timezone)
-          // console.log('timezone', res.data.timezone)
           setIcon(res.data.weather[0].icon)
-          console.log('icon', res.data.weather[0].icon)
           setQuery("");
       }) 
     }
@@ -78,7 +72,7 @@ function App() {
           </div>
             
           <div className="weather animate">  
-            <img src={ iconURL}></img>
+            <img src={ iconURL} alt='icon'></img>
           </div>
           
           <div className="date">
