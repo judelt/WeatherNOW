@@ -36,8 +36,8 @@ function App() {
     "extreme-warm": temp >= 30,
     "warm": temp < 30 && temp >= 20,
     "medium": temp < 20 && temp >= 12,
-    "cold": temp < 12 && temp >= -10,
-    "very-cold": temp < -10 && temp >= -20,
+    "cold": temp < 12 && temp >= -5,
+    "very-cold": temp < -5 && temp >= -20,
     "extreme-cold": temp < -20,
   });
 
