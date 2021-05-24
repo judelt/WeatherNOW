@@ -12,9 +12,9 @@ React application that allows users to see the current weather depending on the 
 
 ### Setup
 
-1. Fork and clone this repository.<br />
-2. Install dependencies with `npm install`.<br />
-3. In the terminal, `cd` into `weather-app`. Run `npm install`. Then run `npm start`.
+1. Fork and clone this repository.
+2. Install dependencies with `npm install`.
+3. Then run `npm start`.
 4. Go to `localhost:3000` in your browser.
 
 ### Dependencies
