@@ -28,11 +28,8 @@
   position: relative;
   margin: 15% 5% 0% 5%;
   padding: 0px 25px;
-
   font-size: 2rem;
   font-weight: 900;
-
-  text-align: center;
 }
 
 .header {
@@ -52,24 +49,31 @@
 .extreme-warm {
   background-color: var(--extreme-warm-temp);
 }
+
 .very-warm {
   background-color: var(--very-warm-temp);
 }
+
 .warm {
   background-color: var(--warm-temp);
 }
+
 .medium {
   background-color: var(--medium-temp);
 }
+
 .medium-cold {
   background-color: var(--medium-cold-temp);
 }
+
 .cold {
   background-color: var(--cold-temp);
 }
+
 .very-cold {
   background-color: var(--very-cold-temp);
 }
+
 .extreme-cold {
   background-color: var(--extreme-cold-temp);
 }
@@ -163,4 +167,11 @@ main {
 
 ::placeholder {
   color: #383838;
+}
+
+@media only screen and (min-width: 960px) {
+  .search-box {
+    padding: 1% 5%;
+    margin: 3% 0 5%;
+  }
 }
