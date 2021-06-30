@@ -1,6 +1,7 @@
 # WeatherNOW
 
-React application that allows users to see the current weather depending on the city that they search for. It uses the OpenWeatherMap API. The background colour changes depending on the temperature.
+React application that allows users to see the current weather depending on the city that they search for. It uses the OpenWeatherMap API. The background colour changes depending on the temperature.<br />
+You can try the app [here.](https://lucid-payne-0568a7.netlify.app/)<br />
 
 ### Screenshots
  <img src="docs/Landing page.png" width="400"/><br /><br />
